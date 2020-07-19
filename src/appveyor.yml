@@ -1,5 +1,5 @@
 image:
-- Ubuntu
+- Ubuntu2004
 skip_commits:
   message: /doco|Merge pull request.*/
 build_script:
