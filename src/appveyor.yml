@@ -1,7 +1,7 @@
 image:
+- Ubuntu2004
 - Visual Studio 2019
 - macos
-- Ubuntu2004
 skip_commits:
   message: /doco|Merge pull request.*/
 test: off
