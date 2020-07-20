@@ -31,6 +31,8 @@ for:
       packages:
         - xvfb
   install:
-  - sh: sudo apt-get install -y xclip
+  - sh: >
+      sudo apt-get install -y xclip
+      export DISPLAY=<x11-server-ip>:0
   build_script:
   - ps: src/build-linux.ps1
