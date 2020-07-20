@@ -1,4 +1,4 @@
-#if (NETSTANDARD || NETFRAMEWORK)
+#if (NETSTANDARD || NETFRAMEWORK || NETCOREAPP)
 using System;
 using System.Diagnostics;
 using System.Text;
