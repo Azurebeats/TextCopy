@@ -14,18 +14,19 @@ for:
       - image: macos
 
   build_script:
-  - ps: src/build.ps1
+  - ps: src/build-macos.ps1
 -
   matrix:
     only:
       - image: Visual Studio 2019
 
   build_script:
-  - ps: src/build.ps1
+  - ps: src/build-win.ps1
 -
   matrix:
     only:
       - image: Ubuntu2004
-
+  install:
+  - sh: sudo apt-get install -y xclip
   build_script:
   - ps: src/build-linux.ps1
