@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>netcoreapp3.1</TargetFrameworks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\Tests\ClipboardServiceTests.cs" />
+    <Compile Include="..\Tests\ClipboardTests.cs" />
+    <Compile Include="..\TextCopy\LinuxClipboard_2.0.cs" Link="LinuxClipboard_2.0.cs" />
+    <Compile Include="..\TextCopy\LinuxClipboard_2.1.cs" Link="LinuxClipboard_2.1.cs" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.6.1" />
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.0" />
+    <PackageReference Include="NUnit" Version="3.13.0-dev-06803" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.17.0" />
+    <PackageReference Include="Verify.NUnit" Version="6.6.0" />
+    <PackageReference Include="ProjectDefaults" Version="1.0.43" PrivateAssets="All" />
+  </ItemGroup>
+</Project>

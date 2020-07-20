@@ -1,4 +1,4 @@
-#if (NETSTANDARD2_0 || NETFRAMEWORK)
+#if (NETSTANDARD2_0 || NETFRAMEWORK || NETCOREAPP)
 using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
