@@ -26,6 +26,10 @@ for:
   matrix:
     only:
       - image: Ubuntu2004
+  addons:
+    apt:
+      packages:
+        - xvfb
   install:
   - sh: sudo apt-get install -y xclip
   build_script:
