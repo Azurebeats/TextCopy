@@ -26,4 +26,4 @@ script:
   - msbuild src/TextCopy.sln /t:restore /p:Configuration=Release -verbosity:quiet
   - msbuild src/TextCopy.sln /t:build /p:Configuration=Release -verbosity:quiet
   - dotnet test src/Tests/Tests.csproj --configuration Release --framework netcoreapp3.1 --no-build --no-restore
-  - mono ./testrunner/NUnit.ConsoleRunner.3.12.0/tools/net472/NUnit.ConsoleRunner.exe ./src/Tests/bin/Release/net472/Tests.dll
+  - mono ./testrunner/xunit.runner.console.2.4.1/tools/net472/xunit.console.exe ./src/Tests/bin/Release/net472/Tests.dll
